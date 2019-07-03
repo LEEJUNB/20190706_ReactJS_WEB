@@ -1,27 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// Movie.js 컴포넌트 불러오고
+// div밑에 해당 컴포넌트 이름쓰기
+import Movie from './Movie'; 
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> gae natanana? </h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Movie />
     </div>
   );
 }
 
-export default App;
+// index.js에 컴포넌트 export위함
+export default App; 
