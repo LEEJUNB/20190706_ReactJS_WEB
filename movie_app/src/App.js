@@ -30,16 +30,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {movies.map(movie, index => { // movies어레이를 잡고 mapping, index는 현재 제공하는 리스트의 숫자를 의미
+        {movies.map(movie, index => { // movies어레이를 잡고 어레이 모듈인 map사용, index는 현재 제공하는 리스트의 숫자를 의미
           return <Movie title={movie.title} poster={movie.poster} key={} /> // movies array의 엘리먼트를  토대로 한 컴포넌트 제작
         })}
-{/* 
-        {[
-          <Movie title={movies[0].title} poster={movies[0].poster} />
-          <Movie title={movies[1].title} poster={movies[1].poster} />
-          <Movie title={movies[2].title} poster={movies[2].poster} />
-          <Movie title={movies[3].title} poster={movies[3].poster} />
-        ]} */}
       </div>
     );
   }
